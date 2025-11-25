@@ -1,4 +1,12 @@
 package ma.msi.billing.mapper;
 
-public class InvoiceMapper {
+import ma.msi.billing.dto.InvoiceDTO;
+import ma.msi.billing.dto.InvoiceDTO;
+import ma.msi.billing.entity.Invoice;
+import org.mapper.Mapper;
+
+@Mapper(componentModel = "spring")
+public interface InvoiceMapper {
+    InvoiceDTO toDto(Invoice invoice);
+    Invoice toEntity(InvoiceDTO dto);
 }

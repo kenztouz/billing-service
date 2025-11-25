@@ -1,4 +1,7 @@
 package ma.msi.billing.repository;
 
-public class PaymentRepository {
+import ma.msi.billing.entity.Payment;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface PaymentRepository extends JpaRepository<Payment, Long> {
 }
